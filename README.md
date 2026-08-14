@@ -40,7 +40,7 @@ citations, streaming responses, voice input/output, and a premium glassmorphic U
 
 ## 🏗️ Architecture
 
-```mermaid
+```
 flowchart TD
     A[User uploads PDF/CSV/TXT/Image] --> B[backend/loader.py<br/>Extract text + metadata]
     B -->|no text layer| B2[backend/ocr.py<br/>Tesseract OCR fallback]
@@ -55,7 +55,6 @@ flowchart TD
     H --> I[backend/rag_chain.py<br/>Gemini "gemini-3.1-flash-lite" — streaming]
     I --> J[app.py<br/>Streamlit UI: chat, citations, insights, compare, voice]
     K[Mic input] --> L[backend/voice.py<br/>Gemini audio transcription] --> J
-```
 
 ## 📦 Folder Structure
 
