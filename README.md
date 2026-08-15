@@ -87,7 +87,7 @@ ragenius-ai/
 
 ```bash
 git clone <your-repo-url> ragenius-ai
-cd ragenius-ai
+cd Rag
 python3 -m venv venv
 source venv/bin/activate   # Windows: venv\Scripts\activate
 pip install -r requirements.txt
